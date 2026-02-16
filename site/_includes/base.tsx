@@ -36,6 +36,8 @@ export default (
       if (menu) {
         menu.classList.toggle("open")
         hamburger?.classList.toggle("open")
+        const expanded = hamburger?.getAttribute("aria-expanded") === "true"
+        hamburger?.setAttribute("aria-expanded", expanded ? "false" : "true")
       }
     }
     document.addEventListener('DOMContentLoaded', () => {
@@ -108,7 +110,7 @@ export default (
                   </li>
                 </ul>
               </li>
-              <div
+              <li
                 style={{
                   "margin-left": "auto",
                   display: "flex",
@@ -116,11 +118,11 @@ export default (
                   alignItems: "center",
                 }}
               >
-                <li class="nav-search" id={searchId}></li>
-                <li class="btn-add-wrapper">
+                <div class="nav-search" id={searchId}></div>
+                <div class="btn-add-wrapper">
                   <a href="/docs/generator/" class="btn-add">Add Mod</a>
-                </li>
-                <li class="theme-toggle">
+                </div>
+                <div class="theme-toggle">
                   <button
                     type="button"
                     aria-label="Toggle dark/light theme"
@@ -137,11 +139,13 @@ export default (
                       <path d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47Z" />
                     </svg>
                   </button>
-                </li>
-                <li class="hamburger-wrapper">
+                </div>
+                <div class="hamburger-wrapper">
                   <button
                     type="button"
                     aria-label="Toggle menu"
+                    aria-controls="nav-menu"
+                    aria-expanded="false"
                     class="hamburger"
                     onclick="toggleMenu()"
                   >
@@ -155,8 +159,8 @@ export default (
                       <path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75Zm0 5A.75.75 0 0 1 1.75 7h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 7.75ZM1.75 12h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Z" />
                     </svg>
                   </button>
-                </li>
-              </div>
+                </div>
+              </li>
             </ul>
           </nav>
 
