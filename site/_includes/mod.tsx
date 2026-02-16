@@ -159,11 +159,14 @@ export default (
           )}
         </dl>
 
-        <button type="button">
-          <a href={manifest.source.url} id="download-link">
-            Download
-          </a>
-        </button>
+        <a
+          href={manifest.source.url}
+          id="download-link"
+          class="button"
+          role="button"
+        >
+          Download
+        </a>
       </aside>
 
       <section class="mod-content">
