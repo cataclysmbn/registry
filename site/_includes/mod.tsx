@@ -163,7 +163,6 @@ export default (
           href={manifest.source.url}
           id="download-link"
           class="button"
-          role="button"
         >
           Download
         </a>
