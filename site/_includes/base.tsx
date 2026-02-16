@@ -41,6 +41,12 @@ export default (
       }
     }
     document.addEventListener('DOMContentLoaded', () => {
+      const themeButton = document.querySelector('.btn-theme')
+      themeButton?.addEventListener('click', changeTheme)
+
+      const menuButton = document.querySelector('.hamburger')
+      menuButton?.addEventListener('click', toggleMenu)
+
       const btn = document.getElementById('back-to-top');
       if (btn) {
         btn.addEventListener('click', () => {
@@ -127,7 +133,6 @@ export default (
                     type="button"
                     aria-label="Toggle dark/light theme"
                     class="btn-theme"
-                    onclick="changeTheme()"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +152,6 @@ export default (
                     aria-controls="nav-menu"
                     aria-expanded="false"
                     class="hamburger"
-                    onclick="toggleMenu()"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
