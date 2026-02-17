@@ -7,6 +7,7 @@
 - [x] TASK: improve and refactor code according to coding standards
 - [x] TASK: improve and refactor code according to coding standards
 - [x] TASK: improve and refactor code according to coding standards
+- [x] TASK: improve and refactor code according to coding standards
 - [ ] TASK: improve and refactor code according to coding standards
 
 - **Tick the checkbox** in AGENTS.md when you finish a task, and commit (follow conventional commit).
