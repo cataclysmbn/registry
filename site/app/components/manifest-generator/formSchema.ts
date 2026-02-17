@@ -89,7 +89,7 @@ export const defaultFormValues: ManifestFormData = {
   displayName: "",
   shortDescription: "",
   description: "",
-  author: [],
+  author: "",
   license: "ALL-RIGHTS-RESERVED",
   homepage: "",
   version: "0.0.0",
