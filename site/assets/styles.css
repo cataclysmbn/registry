@@ -768,6 +768,12 @@ body > footer a:hover {
   box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb, 59, 130, 246), 0.2);
 }
 
+.search-input:focus-visible {
+  border-color: var(--color-primary);
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 .search-input::placeholder {
   color: var(--color-dim);
 }
