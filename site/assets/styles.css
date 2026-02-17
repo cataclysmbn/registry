@@ -801,6 +801,11 @@ body > footer a:hover {
     background: var(--color-primary-highlight);
   }
 
+  .back-to-top:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
   .back-to-top svg {
     width: 24px;
     height: 24px;
