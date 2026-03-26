@@ -87,14 +87,15 @@ id: your_mod_id
 display_name: "Your Mod Name"
 short_description: "A brief description of your mod (max 200 chars)"
 
-author: "Your Name"
-license: "MIT" # Use SPDX identifier
+author:
+  - "Your Name"
+license: "MIT"
 homepage: "https://github.com/yourname/your-mod"
 
 version: "1.0.0"
 
 dependencies:
-  - bn: ">=0.9.1"
+  bn: ">=0.9.1"
 
 categories:
   - content
@@ -129,7 +130,7 @@ deno task check-urls registry-index/manifests/your_mod_id.yaml
 | `id`                | Unique identifier (lowercase, underscores)                |
 | `display_name`      | Human-readable name                                       |
 | `short_description` | Brief description (max 200 chars)                         |
-| `author`            | Mod author(s)                                             |
+| `author`            | Array of mod author names                                 |
 | `license`           | SPDX license ID or `"ALL-RIGHTS-RESERVED"`                |
 | `version`           | Current version                                           |
 | `source.type`       | `"github_archive"`, `"gitlab_archive"`, or `"direct_url"` |
@@ -141,8 +142,8 @@ deno task check-urls registry-index/manifests/your_mod_id.yaml
 | --------------------- | ----------------------------------------------------------------- |
 | `description`         | Full mod description                                              |
 | `homepage`            | Link to repo or documentation                                     |
-| `dependencies`        | List of required mod IDs                                          |
-| `conflicts`           | List of incompatible mod IDs                                      |
+| `dependencies`        | Object mapping required mod IDs to version constraints            |
+| `conflicts`           | Object mapping incompatible mod IDs to version constraints        |
 | `categories`          | Organization categories                                           |
 | `tags`                | Search tags                                                       |
 | `icon_url`            | Icon URL (`.png`, `.svg`, `.webp`, `.avif`, `.jpg/.jpeg`, `.gif`) |
@@ -167,5 +168,11 @@ To enable automatic version updates:
 ```yaml
 autoupdate:
   type: tag # or "commit"
-  url: "https://github.com/user/repo/archive/$version.zip"
+  update_url: "https://github.com/user/repo"
+  url: "https://github.com/user/repo/archive/refs/tags/$version.zip"
+  icon_url: "https://raw.githubusercontent.com/user/repo/$commit_sha/icon.png"
 ```
+
+`update_url` is used to discover releases. Optional substitution templates such as
+`autoupdate.url`, `autoupdate.icon_url`, and `autoupdate.commit_sha` are applied when a
+new release is found.
