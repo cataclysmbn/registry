@@ -76,6 +76,17 @@ export const AutoupdateConfig = v.looseObject({
   update_url: v.optional(
     v.string("URL to check for updates. If omitted, uses homepage."),
   ),
+  url: v.optional(
+    v.string("Template for release archive URL. Supports $version and $commit_sha substitutions."),
+  ),
+  icon_url: v.optional(
+    v.string("Template for icon URL. Supports $version and $commit_sha substitutions."),
+  ),
+  commit_sha: v.optional(
+    v.string(
+      "Template override for source.commit_sha. Supports $version and $commit_sha substitutions.",
+    ),
+  ),
   branch: v.optional(
     v.string('Branch to track when type is "commit"'),
   ),

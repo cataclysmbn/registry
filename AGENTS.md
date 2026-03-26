@@ -1,13 +1,13 @@
 # Cataclysm: Bright Nights Mod Registry Agent Instruction
 
-## Tasks
-
-- [x] Update workflows and docs for registry-index syncing
-- [ ] TASK: improve and refactor code according to coding standards
-
 ## Skills
 
 - Add registry manifest skill: `.agents/skills/add-registry/SKILL.md`
+
+## Notes
+
+- Keep public manifest docs and schema output aligned with runtime autoupdate substitution keys.
+- Treat `homepage` as part of manifest URL health checks.
 
 - **Tick the checkbox** in AGENTS.md when you finish a task, and commit (follow conventional commit).
   - **if all subtasks are ticked, erase task checkbox section and update this file accordingly from knowledge gained from session, then amend it**

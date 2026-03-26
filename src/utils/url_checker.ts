@@ -115,6 +115,7 @@ export const extractManifestUrls = (manifest: {
   [
     manifest.source?.url,
     manifest.icon_url,
+    manifest.homepage,
   ].filter((url): url is string => url !== undefined)
 
 const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))

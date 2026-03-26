@@ -30,6 +30,20 @@ Deno.test("extractManifestUrls - extracts icon URL", () => {
   assertEquals(urls.includes("https://example.com/icon.png"), true)
 })
 
+Deno.test("extractManifestUrls - extracts homepage URL", () => {
+  const manifest = {
+    source: {
+      url: "https://example.com/mod.zip",
+    },
+    homepage: "https://example.com/mod",
+  }
+
+  const urls = extractManifestUrls(manifest)
+  assertEquals(urls.length, 2)
+  assertEquals(urls.includes("https://example.com/mod.zip"), true)
+  assertEquals(urls.includes("https://example.com/mod"), true)
+})
+
 Deno.test("extractManifestUrls - handles missing fields", () => {
   const manifest = {}
   const urls = extractManifestUrls(manifest)

@@ -1,7 +1,7 @@
 #!/usr/bin/env -S deno run --allow-read --allow-net
 /**
  * Check URLs in all manifests.
- * Verifies that download URLs and icon URLs are reachable.
+ * Verifies that download, icon, and homepage URLs are reachable.
  */
 
 import { Command } from "@cliffy/command"
@@ -93,7 +93,7 @@ if (import.meta.main) {
   await new Command()
     .name("check-urls")
     .version("1.0.0")
-    .description("Check that manifest URLs (download and icon) are reachable")
+    .description("Check that manifest URLs (download, icon, and homepage) are reachable")
     .arguments("[target:string]")
     .action(async (_options, target = "registry-index/manifests") => {
       try {
