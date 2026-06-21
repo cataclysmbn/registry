@@ -15,10 +15,10 @@ Adding your mod to the registry is easy! Follow these steps:
 - Your mod must be hosted on GitHub (or another git host)
 - You need a GitHub account to submit pull requests
 
-## Step 1: Fork the Registry
+## Step 1: Fork registry-index
 
 1. Go to
-   [github.com/cataclysmbn/registry](https://github.com/cataclysmbn/registry)
+   [github.com/cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index)
 2. Click "Fork" to create your own copy
 
 ## Step 2: Create a Manifest File
@@ -32,18 +32,17 @@ It can automatically fetch mod information from your GitHub repository.
 
 ### Option B: CLI Fetch Command
 
-If you prefer working from the command line, clone the registry and use the `fetch` command:
+If you prefer working from the command line, clone the tooling repo and write output to your `registry-index` fork:
 
 ```bash
-# Clone your fork
-git clone https://github.com/YOUR_USERNAME/registry.git
+git clone https://github.com/cataclysmbn/registry.git
+git clone https://github.com/YOUR_USERNAME/registry-index.git
 cd registry
 
-# Fetch mods from a GitHub repository
-deno task fetch https://github.com/yourname/your-mod
+deno task fetch https://github.com/yourname/your-mod -o ../registry-index/manifests
 
 # Or use the shorthand format
-deno task fetch yourname/your-mod
+deno task fetch yourname/your-mod -o ../registry-index/manifests
 ```
 
 The CLI will:
@@ -77,7 +76,7 @@ deno task fetch --filter "arcana" https://github.com/Chaosvolt/Cataclysm-BN-Modu
 
 ### Option C: Manual Creation
 
-Create a new YAML file in the `registry-index/manifests/` folder named after your mod ID:
+Create a new YAML file in your `registry-index/manifests/` folder named after your mod ID:
 
 ```yaml
 # registry-index/manifests/your_mod_id.yaml
@@ -115,9 +114,9 @@ deno task check-urls registry-index/manifests/your_mod_id.yaml
 
 ## Step 4: Submit a Pull Request
 
-1. Commit your manifest file
+1. Commit your manifest file in your `registry-index` fork
 2. Push to your fork
-3. Open a pull request to the main repository
+3. Open a pull request to `cataclysmbn/registry-index`
 
 ## Manifest Fields Reference
 

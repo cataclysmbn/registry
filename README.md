@@ -27,14 +27,10 @@ tracked here as a submodule. When cloning this repository locally, use:
 git clone --recurse-submodules https://github.com/cataclysmbn/registry.git
 ```
 
-To modify registry-index locally, work inside the submodule and push to its repo:
+To modify registry-index, fork
+[cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index), commit manifest changes there, and open a pull request to `cataclysmbn/registry-index`.
 
-```bash
-cd registry-index
-git add -A
-git commit -m "chore: update registry-index"
-git push
-```
+Do not submit manifest/index changes to this `registry` repository; it only hosts the site and tooling.
 
 To keep the submodule on the latest commit:
 

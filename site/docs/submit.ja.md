@@ -15,9 +15,9 @@ url: /docs/submit/
 - ModはGitHub（または他のgitホスト）で公開されている必要があります。
 - Pull Request作成用のGitHubアカウントが必要です。
 
-## ステップ1: Registryをfork
+## ステップ1: registry-indexをfork
 
-1. [github.com/cataclysmbn/registry](https://github.com/cataclysmbn/registry) を開く
+1. [github.com/cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index) を開く
 2. **Fork** をクリック
 
 ## ステップ2: マニフェスト作成
@@ -29,12 +29,13 @@ url: /docs/submit/
 ### 方法B: CLI fetch コマンド
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/registry.git
+git clone https://github.com/cataclysmbn/registry.git
+git clone https://github.com/YOUR_USERNAME/registry-index.git
 cd registry
 
-deno task fetch https://github.com/yourname/your-mod
+deno task fetch https://github.com/yourname/your-mod -o ../registry-index/manifests
 # または
-deno task fetch yourname/your-mod
+deno task fetch yourname/your-mod -o ../registry-index/manifests
 ```
 
 ### 方法C: 手動作成
@@ -50,9 +51,9 @@ deno task check-urls registry-index/manifests/your_mod_id.yaml
 
 ## ステップ4: Pull Request 作成
 
-1. マニフェストをコミット
+1. `registry-index` forkでマニフェストをコミット
 2. fork先へpush
-3. 本家リポジトリへPull Requestを作成
+3. `cataclysmbn/registry-index`へPull Requestを作成
 
 ## 補足
 

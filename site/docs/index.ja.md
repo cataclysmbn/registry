@@ -14,6 +14,7 @@ url: /docs/
 
 ## リソース
 
-- [GitHubリポジトリ](https://github.com/cataclysmbn/registry)
+- [マニフェストリポジトリ](https://github.com/cataclysmbn/registry-index)
+- [サイトとツールのリポジトリ](https://github.com/cataclysmbn/registry)
 - [Cataclysm: Bright Nights](https://github.com/cataclysmbn/Cataclysm-BN)
 - [BN Wiki](https://github.com/cataclysmbn/Cataclysm-BN/wiki)

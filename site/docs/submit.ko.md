@@ -15,9 +15,9 @@ url: /docs/submit/
 - 모드는 GitHub(또는 다른 git 호스트)에 있어야 합니다.
 - Pull Request를 만들 GitHub 계정이 필요합니다.
 
-## 1단계: Registry 포크
+## 1단계: registry-index 포크
 
-1. [github.com/cataclysmbn/registry](https://github.com/cataclysmbn/registry) 이동
+1. [github.com/cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index) 이동
 2. **Fork** 버튼 클릭
 
 ## 2단계: 명세서 파일 생성
@@ -29,12 +29,13 @@ url: /docs/submit/
 ### 방법 B: CLI fetch 명령
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/registry.git
+git clone https://github.com/cataclysmbn/registry.git
+git clone https://github.com/YOUR_USERNAME/registry-index.git
 cd registry
 
-deno task fetch https://github.com/yourname/your-mod
+deno task fetch https://github.com/yourname/your-mod -o ../registry-index/manifests
 # 또는
-deno task fetch yourname/your-mod
+deno task fetch yourname/your-mod -o ../registry-index/manifests
 ```
 
 ### 방법 C: 수동 작성
@@ -50,9 +51,9 @@ deno task check-urls registry-index/manifests/your_mod_id.yaml
 
 ## 4단계: Pull Request 제출
 
-1. 명세서 파일 커밋
+1. `registry-index` 포크에서 명세서 파일 커밋
 2. 포크 저장소로 푸시
-3. 원본 저장소로 Pull Request 생성
+3. `cataclysmbn/registry-index`로 Pull Request 생성
 
 ## 참고
 

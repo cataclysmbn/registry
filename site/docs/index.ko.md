@@ -14,6 +14,7 @@ url: /docs/
 
 ## 자료
 
-- [GitHub 저장소](https://github.com/cataclysmbn/registry)
+- [명세서 저장소](https://github.com/cataclysmbn/registry-index)
+- [사이트와 도구 저장소](https://github.com/cataclysmbn/registry)
 - [Cataclysm: Bright Nights](https://github.com/cataclysmbn/Cataclysm-BN)
 - [BN 위키](https://github.com/cataclysmbn/Cataclysm-BN/wiki)

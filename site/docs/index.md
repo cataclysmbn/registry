@@ -20,6 +20,7 @@ url: /docs/
 
 ## Resources
 
-- [GitHub Repository](https://github.com/cataclysmbn/registry)
+- [Manifest Repository](https://github.com/cataclysmbn/registry-index)
+- [Site and Tooling Repository](https://github.com/cataclysmbn/registry)
 - [Cataclysm: Bright Nights](https://github.com/cataclysmbn/Cataclysm-BN)
 - [BN Wiki](https://github.com/cataclysmbn/Cataclysm-BN/wiki)
