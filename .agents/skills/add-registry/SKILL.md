@@ -1,6 +1,6 @@
 ---
 name: add-registry
-description: Add or update Cataclysm: Bright Nights mod registry manifests, especially entries that should appear on mods.cataclysmbn.org.
+description: "Add or update Cataclysm: Bright Nights mod registry manifests, especially entries that should appear on mods.cataclysmbn.org."
 ---
 
 # Add Registry Manifest
