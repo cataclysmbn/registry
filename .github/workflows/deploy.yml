@@ -23,7 +23,11 @@ jobs:
 
       - name: Update registry-index submodule
         run: |
-          git -C registry-index fetch origin main
+          if [ "$(git -C registry-index rev-parse --is-shallow-repository)" = true ]; then
+            git -C registry-index fetch --unshallow origin main
+          else
+            git -C registry-index fetch origin main
+          fi
           git -C registry-index checkout -B main origin/main
 
       - name: Setup Deno environment

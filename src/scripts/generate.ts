@@ -60,6 +60,19 @@ export const loadManifests = async (
 ): Promise<ModManifest[]> => {
   const manifests: ModManifest[] = []
   const registryIndexDir = dirname(manifestDir)
+  const history = await new Deno.Command("git", {
+    args: ["-C", registryIndexDir, "rev-parse", "--is-shallow-repository"],
+    stdout: "piped",
+    stderr: "piped",
+  }).output()
+  if (!history.success) {
+    throw new Error(`Cannot check Git history for ${registryIndexDir}`)
+  }
+  if (textDecoder.decode(history.stdout).trim() === "true") {
+    throw new Error(
+      `Git history for ${registryIndexDir} is shallow; fetch the full history before generating timestamps`,
+    )
+  }
 
   for await (
     const entry of walk(manifestDir, {

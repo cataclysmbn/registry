@@ -102,7 +102,7 @@
     },
     "test": {
       "description": "Run tests",
-      "command": "deno test -RW --allow-net --allow-env src/"
+      "command": "deno test -RW --allow-net --allow-env --allow-run=git src/"
     },
     "test:e2e": {
       "description": "Run E2E tests (requires network)",
