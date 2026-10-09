@@ -118,6 +118,10 @@ msgstr "커밋 SHA"
 msgid "Copy"
 msgstr "복사"
 
+#: site/app/components/manifest-generator/ManifestOutput.tsx
+msgid "Copy the manifest, then paste it into the issue form."
+msgstr "명세서를 복사한 뒤 이슈 양식에 붙여 넣으세요."
+
 #: site/app/components/manifest-generator/VersionSection.tsx
 msgid "Dependencies"
 msgstr "의존성"

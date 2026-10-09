@@ -118,6 +118,10 @@ msgstr "Commit SHA"
 msgid "Copy"
 msgstr "Copy"
 
+#: site/app/components/manifest-generator/ManifestOutput.tsx
+msgid "Copy the manifest, then paste it into the issue form."
+msgstr "Copy the manifest, then paste it into the issue form."
+
 #: site/app/components/manifest-generator/VersionSection.tsx
 msgid "Dependencies"
 msgstr "Dependencies"
