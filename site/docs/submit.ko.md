@@ -17,7 +17,7 @@ url: /docs/submit/
 
 ## 빠른 제출
 
-1. [Manifest Generator](./generator/)를 작성합니다.
+1. [Manifest Generator](/ko/docs/generator/)를 작성합니다.
 2. **제출**을 누르면 명세서가 채워진 GitHub 이슈 작성 화면이 열립니다.
 3. **Create**를 누르면 봇이 명세서를 검증하고 Pull Request를 엽니다. 검증에 실패하면 이슈를 수정하세요. 봇이 다시 시도합니다.
 
@@ -32,7 +32,7 @@ url: /docs/submit/
 
 ### 방법 A: 웹 생성기 (권장)
 
-[Manifest Generator](./generator/)를 사용하면 입력을 도와주고 GitHub 저장소 정보도 자동으로 가져올 수 있습니다.
+[Manifest Generator](/ko/docs/generator/)를 사용하면 입력을 도와주고 GitHub 저장소 정보도 자동으로 가져올 수 있습니다.
 
 ### 방법 B: CLI fetch 명령
 

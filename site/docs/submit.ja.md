@@ -17,7 +17,7 @@ url: /docs/submit/
 
 ## かんたん投稿
 
-1. [Manifest Generator](./generator/) に入力します。
+1. [Manifest Generator](/ja/docs/generator/) に入力します。
 2. **投稿** をクリックすると、マニフェスト入力済みのGitHub Issue作成画面が開きます。
 3. **Create** をクリックすると、ボットがマニフェストを検証してPull Requestを作成します。検証に失敗した場合はIssueを編集してください。ボットが再試行します。
 
@@ -32,7 +32,7 @@ url: /docs/submit/
 
 ### 方法A: Webジェネレーター（推奨）
 
-[Manifest Generator](./generator/) を使うと、入力支援とGitHub情報の自動取得ができます。
+[Manifest Generator](/ja/docs/generator/) を使うと、入力支援とGitHub情報の自動取得ができます。
 
 ### 方法B: CLI fetch コマンド
 
