@@ -86,18 +86,8 @@ export default ({ search, lang: currentLang = "en" }: Lume.Data) => {
               </strong>{" "}
               {i18n._(t`to create your manifest file`)}
             </li>
-            <li>
-              {i18n._(t`Fork the registry-index repository`)}:{" "}
-              <a href="https://github.com/cataclysmbn/registry-index">registry-index</a>
-            </li>
-            <li>
-              {i18n._(t`Add your manifest file to`)}{" "}
-              <code>registry-index/manifests/your_mod_id.yaml</code>
-            </li>
-            <li>
-              {i18n._(t`Run`)} <code>deno task validate</code> {i18n._(t`to check your manifest`)}
-            </li>
-            <li>{i18n._(t`Submit a pull request`)}</li>
+            <li>{i18n._(t`Click Submit to open a prefilled GitHub issue`)}</li>
+            <li>{i18n._(t`A bot validates the manifest and opens the pull request`)}</li>
           </ol>
 
           <p style={{ marginTop: "1rem" }}>

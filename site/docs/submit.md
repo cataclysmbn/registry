@@ -15,6 +15,14 @@ Adding your mod to the registry is easy! Follow these steps:
 - Your mod must be hosted on GitHub (or another git host)
 - You need a GitHub account to submit pull requests
 
+## Quick Submission
+
+1. Fill in the [Manifest Generator](/docs/generator/).
+2. Click **Submit**. GitHub opens a new issue with your manifest filled in.
+3. Click **Create**. A bot validates the manifest and opens the pull request. If validation fails, edit the issue and the bot retries.
+
+The steps below are for opening the pull request yourself.
+
 ## Step 1: Fork registry-index
 
 1. Go to

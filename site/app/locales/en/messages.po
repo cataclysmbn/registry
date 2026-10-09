@@ -57,6 +57,10 @@ msgstr "✓ Copied!"
 msgid "1.0.0"
 msgstr "1.0.0"
 
+#: site/index.page.tsx
+msgid "A bot validates the manifest and opens the pull request"
+msgstr "A bot validates the manifest and opens the pull request"
+
 #: site/app/components/manifest-generator/IdentitySection.tsx
 msgid "A brief description of your mod"
 msgstr "A brief description of your mod"
@@ -64,10 +68,6 @@ msgstr "A brief description of your mod"
 #: site/app/components/manifest-generator/SourceSection.tsx
 msgid "abc123..."
 msgstr "abc123..."
-
-#: site/index.page.tsx
-msgid "Add your manifest file to"
-msgstr "Add your manifest file to"
 
 #: site/app/components/manifest-generator/AttributionSection.tsx
 msgid "Attribution"
@@ -106,6 +106,10 @@ msgstr "Categories"
 msgid "Categories and Tags"
 msgstr "Categories and Tags"
 
+#: site/index.page.tsx
+msgid "Click Submit to open a prefilled GitHub issue"
+msgstr "Click Submit to open a prefilled GitHub issue"
+
 #: site/app/components/manifest-generator/SourceSection.tsx
 msgid "Commit SHA"
 msgstr "Commit SHA"
@@ -113,6 +117,10 @@ msgstr "Commit SHA"
 #: site/app/components/manifest-generator/ManifestOutput.tsx
 msgid "Copy"
 msgstr "Copy"
+
+#: site/app/components/manifest-generator/ManifestOutput.tsx
+msgid "Copy the manifest, then paste it into the issue form."
+msgstr "Copy the manifest, then paste it into the issue form."
 
 #: site/app/components/manifest-generator/VersionSection.tsx
 msgid "Dependencies"
@@ -175,10 +183,6 @@ msgstr "Follow tagged releases only"
 #: site/index.page.tsx
 msgid "For Mod Authors"
 msgstr "For Mod Authors"
-
-#: site/index.page.tsx
-msgid "Fork the registry-index repository"
-msgstr "Fork the registry-index repository"
 
 #. placeholder {0}: mods.length
 #: site/app/components/ManifestGenerator.tsx
@@ -337,10 +341,6 @@ msgstr "repo-main/path/to/mod"
 msgid "Report an Issue"
 msgstr "Report an Issue"
 
-#: site/index.page.tsx
-msgid "Run"
-msgstr "Run"
-
 #: site/app/components/ManifestGenerator.tsx
 msgid "Scanning repository..."
 msgstr "Scanning repository..."
@@ -370,9 +370,9 @@ msgstr "Source URL *"
 msgid "submission guide"
 msgstr "submission guide"
 
-#: site/index.page.tsx
-msgid "Submit a pull request"
-msgstr "Submit a pull request"
+#: site/app/components/manifest-generator/ManifestOutput.tsx
+msgid "Submit"
+msgstr "Submit"
 
 #: site/app/components/manifest-generator/AutoupdateSection.tsx
 msgid "Tag Regex (optional)"
@@ -381,10 +381,6 @@ msgstr "Tag Regex (optional)"
 #: site/app/components/manifest-generator/CategoriesSection.tsx
 msgid "Tags"
 msgstr "Tags"
-
-#: site/index.page.tsx
-msgid "to check your manifest"
-msgstr "to check your manifest"
 
 #: site/index.page.tsx
 msgid "to create your manifest file"
