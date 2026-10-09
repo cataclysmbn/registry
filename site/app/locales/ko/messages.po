@@ -57,6 +57,10 @@ msgstr "✓ 복사됨!"
 msgid "1.0.0"
 msgstr "1.0.0"
 
+#: site/index.page.tsx
+msgid "A bot validates the manifest and opens the pull request"
+msgstr "봇이 명세서를 검증하고 풀 리퀘스트를 엽니다"
+
 #: site/app/components/manifest-generator/IdentitySection.tsx
 msgid "A brief description of your mod"
 msgstr "모드의 짧은 설명"
@@ -64,10 +68,6 @@ msgstr "모드의 짧은 설명"
 #: site/app/components/manifest-generator/SourceSection.tsx
 msgid "abc123..."
 msgstr "abc123..."
-
-#: site/index.page.tsx
-msgid "Add your manifest file to"
-msgstr "매니페스트 파일을 다음에 추가하세요"
 
 #: site/app/components/manifest-generator/AttributionSection.tsx
 msgid "Attribution"
@@ -105,6 +105,10 @@ msgstr "카테고리"
 #: site/app/components/manifest-generator/CategoriesSection.tsx
 msgid "Categories and Tags"
 msgstr "카테고리와 태그"
+
+#: site/index.page.tsx
+msgid "Click Submit to open a prefilled GitHub issue"
+msgstr "제출을 눌러 내용이 채워진 GitHub 이슈를 엽니다"
 
 #: site/app/components/manifest-generator/SourceSection.tsx
 msgid "Commit SHA"
@@ -175,10 +179,6 @@ msgstr "태그된 릴리스만 추적"
 #: site/index.page.tsx
 msgid "For Mod Authors"
 msgstr "모드 작성자용"
-
-#: site/index.page.tsx
-msgid "Fork the registry-index repository"
-msgstr "registry-index 저장소를 포크하기"
 
 #. placeholder {0}: mods.length
 #: site/app/components/ManifestGenerator.tsx
@@ -337,10 +337,6 @@ msgstr "repo-main/path/to/mod"
 msgid "Report an Issue"
 msgstr "이슈 신고"
 
-#: site/index.page.tsx
-msgid "Run"
-msgstr "실행"
-
 #: site/app/components/ManifestGenerator.tsx
 msgid "Scanning repository..."
 msgstr "저장소를 스캔하는 중..."
@@ -370,9 +366,9 @@ msgstr "소스 URL *"
 msgid "submission guide"
 msgstr "제출 가이드"
 
-#: site/index.page.tsx
-msgid "Submit a pull request"
-msgstr "풀 리퀘스트 제출"
+#: site/app/components/manifest-generator/ManifestOutput.tsx
+msgid "Submit"
+msgstr "제출"
 
 #: site/app/components/manifest-generator/AutoupdateSection.tsx
 msgid "Tag Regex (optional)"
@@ -381,10 +377,6 @@ msgstr "태그 정규식(선택)"
 #: site/app/components/manifest-generator/CategoriesSection.tsx
 msgid "Tags"
 msgstr "태그"
-
-#: site/index.page.tsx
-msgid "to check your manifest"
-msgstr "매니페스트를 확인하려면"
 
 #: site/index.page.tsx
 msgid "to create your manifest file"

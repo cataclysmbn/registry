@@ -15,6 +15,14 @@ url: /docs/submit/
 - 모드는 GitHub(또는 다른 git 호스트)에 있어야 합니다.
 - Pull Request를 만들 GitHub 계정이 필요합니다.
 
+## 빠른 제출
+
+1. [Manifest Generator](./generator/)를 작성합니다.
+2. **제출**을 누르면 명세서가 채워진 GitHub 이슈 작성 화면이 열립니다.
+3. **Create**를 누르면 봇이 명세서를 검증하고 Pull Request를 엽니다. 검증에 실패하면 이슈를 수정하세요. 봇이 다시 시도합니다.
+
+아래 단계는 Pull Request를 직접 여는 방법입니다.
+
 ## 1단계: registry-index 포크
 
 1. [github.com/cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index) 이동

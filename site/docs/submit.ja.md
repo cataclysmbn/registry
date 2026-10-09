@@ -15,6 +15,14 @@ url: /docs/submit/
 - ModはGitHub（または他のgitホスト）で公開されている必要があります。
 - Pull Request作成用のGitHubアカウントが必要です。
 
+## かんたん投稿
+
+1. [Manifest Generator](./generator/) に入力します。
+2. **投稿** をクリックすると、マニフェスト入力済みのGitHub Issue作成画面が開きます。
+3. **Create** をクリックすると、ボットがマニフェストを検証してPull Requestを作成します。検証に失敗した場合はIssueを編集してください。ボットが再試行します。
+
+以下はPull Requestを自分で作成する手順です。
+
 ## ステップ1: registry-indexをfork
 
 1. [github.com/cataclysmbn/registry-index](https://github.com/cataclysmbn/registry-index) を開く
