@@ -10,7 +10,7 @@ url: /docs/
 
 ## Guides
 
-- [Submit a Mod](./generator) - Add your mod to the registry
+- [Submit a Mod](./submit) - Add your mod to the registry
 
 <!--
 ## For Developers

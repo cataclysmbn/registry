@@ -10,7 +10,7 @@ url: /docs/
 
 ## ガイド
 
-- [Mod投稿](./generator) - レジストリにModを追加する手順
+- [Mod投稿](./submit) - レジストリにModを追加する手順
 
 ## リソース
 

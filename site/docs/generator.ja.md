@@ -17,6 +17,13 @@ url: /docs/generator/
   GitHub リポジトリから情報を取得できます。
 </p>
 
+<p>
+  <strong>投稿</strong> をクリックすると、<code>registry-index</code> にマニフェスト入力済みのGitHub Issue作成画面が開きます。
+  <strong>Create</strong> をクリックすると、ボットがマニフェストを検証し、メンテナーがレビューするPull Requestを作成します。
+  Issueは公開されます。検証に失敗するとボットがエラーをコメントするので、Issueを編集して再検証させてください。
+  詳しくは <a href="/ja/docs/submit/">投稿ガイド</a> を参照してください。
+</p>
+
 <div id="manifest-generator">
   <noscript>
     <p>マニフェストジェネレーターにはJavaScriptが必要です。</p>
